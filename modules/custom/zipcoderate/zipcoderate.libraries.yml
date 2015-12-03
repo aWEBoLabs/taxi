@@ -1,0 +1,7 @@
+google.maps:
+  version: 1.x
+  js:
+    js/zipcoderate.maps.js: {minified: false}
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWXJ2NY9dIov1dHNkfzYeQKRh_W_3BE8&signed_in=true&libraries=drawing&callback=initMap: {external, defer: true}
+  dependencies:
+    - core/jquery

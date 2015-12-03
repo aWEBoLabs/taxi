@@ -1,0 +1,12 @@
+name: ZipCodeRate
+type: module
+description: 'Allows to import Zip Code html table from http://www.webcodigopostal.mx/.'
+package: Taxi
+# version: VERSION
+# core: 8.x
+# configure: entity.action.collection
+
+# Information added by Drupal.org packaging script on 2015-11-19
+version: '8.0.0'
+core: '8.x'
+project: 'Taxi'

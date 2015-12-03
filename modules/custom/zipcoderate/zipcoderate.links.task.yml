@@ -1,0 +1,15 @@
+zipcoderate.admin:
+  route_name: zipcoderate.admin
+  title: 'ZipCodeRate'
+  base_route: system.admin_content
+
+zipcoderate.admin.list:
+  route_name: zipcoderate.admin
+  title: 'List'
+  parent_id: zipcoderate.admin
+
+zipcoderate.import:
+  route_name: zipcoderate.import
+  title: 'Import'
+  parent_id: zipcoderate.admin
+  weight: 8

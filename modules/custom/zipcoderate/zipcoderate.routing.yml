@@ -1,0 +1,26 @@
+# Drupal 8 zipcoderate.routing.yml snippet
+zipcoderate.admin:
+  path: '/admin/content/zipcoderate'
+  defaults:
+    _title: 'ZipCode Rates'
+    _controller: '\Drupal\zipcoderate\Controller\ZipCodeRateController::adminOverview'
+  options:
+    _node_operation_route: TRUE
+  requirements:
+    _permission: 'administer zipcoderate'
+
+zipcoderate.admin.state_city:
+  path: '/admin/content/zipcoderate/{state}/{city}'
+  defaults:
+    _title: 'Rates State City'
+    _controller: '\Drupal\zipcoderate\Controller\ZipCodeRateController::adminStateCity'
+  requirements:
+    _permission: 'administer zipcoderate'
+
+zipcoderate.import:
+  path: '/admin/content/zipcoderate/import'
+  defaults:
+    _form: '\Drupal\zipcoderate\Form\ZipCodeRateImportForm'
+    _title: 'Import'
+  requirements:
+    _permission: 'administer zipcoderate'
