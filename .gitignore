@@ -1,0 +1,5 @@
+sites/*/settings*.php
+sites/*/files
+sites/*/private
+sites/*/pvt
+sites/*/tmp
