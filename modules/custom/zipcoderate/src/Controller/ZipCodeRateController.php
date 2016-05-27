@@ -65,14 +65,19 @@ class ZipCodeRateController {
    *
    */
   public function adminStateCity($state, $city) {
-    $output = "<p>state={$state}, city={$city}</p>
-    <div id=\"map\"></div>";
     $build = array(
-      '#type' => 'markup', 
-      '#markup' => $output, 
+      '#theme' => 'zipcoderate-rate_map', 
+      '#state' => $state, 
+      '#city' => $city, 
       '#attached' => array(
         'library' => array(
           "zipcoderate/google.maps", 
+        ), 
+        'drupalSettings' => array(
+          'zipcoderate' => array(
+            'state' => $state, 
+            'city' => $city, 
+          ), 
         ), 
       ), 
     );

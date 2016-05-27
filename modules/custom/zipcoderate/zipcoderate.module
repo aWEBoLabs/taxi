@@ -1,0 +1,15 @@
+<?php
+/**
+ * Implements hook_theme.
+ */
+function zipcoderate_theme() {
+  return array(
+    'zipcoderate-rate_map' => array(
+      'variables' => array(
+        'state' => NULL,
+        'city' => NULL, 
+      ), 
+      'template' => 'zipcoderate-rate_map', 
+    ), 
+  );
+}
